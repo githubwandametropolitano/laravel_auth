@@ -32,7 +32,7 @@
                             <li><a href="#tab_2" data-toggle="tab">@lang('Paginations')</a></li>
                             <li><a href="#tab_3" data-toggle="tab">@lang('Comments')</a></li>
                             <li><a href="#tab_4" data-toggle="tab">@lang('Database')</a></li>
-                            <li><a href="#tab_5" data-toggle="tab">@lang('Mails')</a></li>
+                            
                         </ul>
                         <div class="tab-content">
 
@@ -180,68 +180,6 @@
                                                 'input' => 'slider',
                                                 'min' => 1,
                                                 'max' => 10,
-                                        ],
-                                    ])
-                                    <button class="btn btn-primary" type="submit">@lang('Submit')</button>
-                                </form>
-                            </div>
-
-                            <div class="tab-pane fade" id="tab_4">
-                                <h3 class="text-danger text-center">@lang('Be careful not to enter wrong parameters!')</h3>
-                                <form id="formdatabase" method="post" action="{{ route('settings.update', ['page' => 4]) }}">
-                                    {{ method_field('PUT') }}
-                                    {{ csrf_field() }}
-                                    <div class="form-group">
-                                        <label for="db_connection">@lang('Connection')</label>
-                                        <select id="db_connection" name="db_connection" class="form-control">
-                                            @foreach($connections as $connection)
-                                                <option value="{{ $connection }}" {{ old('db_connection') ? ($connection === old('db_connection') ? 'selected' : '') : $connection === $actualConnection ? 'selected' : '' }}>{{ $connection }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                    @include('back.partials.input', [
-                                        'input' => [
-                                            'title' => __('Host'),
-                                            'name' => 'db_host',
-                                            'value' => old('db_host', $envRepository->get('DB_HOST')),
-                                            'input' => 'text',
-                                            'required' => true,
-                                        ],
-                                    ])
-                                    @include('back.partials.input', [
-                                        'input' => [
-                                            'title' => __('Port'),
-                                            'name' => 'db_port',
-                                            'value' => old('db_port', $envRepository->get('DB_PORT')),
-                                            'input' => 'text',
-                                            'required' => true,
-                                        ],
-                                    ])
-                                    @include('back.partials.input', [
-                                        'input' => [
-                                            'title' => __('Database name'),
-                                            'name' => 'db_database',
-                                            'value' => old('db_database', $envRepository->get('DB_DATABASE')),
-                                            'input' => 'text',
-                                            'required' => true,
-                                        ],
-                                    ])
-                                    @include('back.partials.input', [
-                                        'input' => [
-                                            'title' => __('User name'),
-                                            'name' => 'db_username',
-                                            'value' => old('db_username', $envRepository->get('DB_USERNAME')),
-                                            'input' => 'text',
-                                            'required' => true,
-                                        ],
-                                    ])
-                                    @include('back.partials.input', [
-                                        'input' => [
-                                            'title' => __('Password'),
-                                            'name' => 'db_password',
-                                            'value' => old('db_password', $envRepository->get('DB_PASSWORD')),
-                                            'input' => 'text',
-                                            'required' => false,
                                         ],
                                     ])
                                     <button class="btn btn-primary" type="submit">@lang('Submit')</button>
