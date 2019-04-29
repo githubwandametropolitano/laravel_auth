@@ -89,9 +89,7 @@ class DatabaseSeeder extends Seeder
 
         $nbrUsers = 5;
 
-        // Other users
-        factory(User::class, 15)->create();
-        sleep(2);
+
         User::create(
             [
                 'name' => 'Sorditofublos',
