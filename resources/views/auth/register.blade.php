@@ -21,7 +21,7 @@
                                 {{ $errors->first('company_name') }}
                             @endcomponent
                         @endif 
-                        <input id="name" placeholder="@lang('Company Name')" type="text" class="full-width"  name="company_ame" value="{{ old('company_name') }}" required autofocus>
+                        <input id="name" placeholder="@lang('Company Name')" type="text" class="full-width"  name="company_name" value="{{ old('company_name') }}" required autofocus>
                         @if ($errors->has('name'))
                             @component('front.components.error')
                                 {{ $errors->first('name') }}
