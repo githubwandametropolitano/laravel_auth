@@ -64,18 +64,12 @@
 				<li {{ currentRoute('home') }}>
 					<a href="{{ route('home') }}">@lang('Home')</a>
 				</li>
-				<li class="has-children">
-					<a href="#">@lang('Categories')</a>
-					<ul class="sub-menu">
-						@foreach ($categories as $category)
-							<li><a href="{{ route('category', [$category->slug ]) }}">{{ $category->title }}</a></li>
-						@endforeach
-					</ul>
-				</li>
+				
 				@guest
 					<li {{ currentRoute('contacts.create') }}>
 						<a href="{{ route('contacts.create') }}">@lang('Contact')</a>
 					</li>
+
 
 					<li {{ currentRoute('register') }}>
 						<a href="{{ route('register') }}">@lang('Register')</a>
