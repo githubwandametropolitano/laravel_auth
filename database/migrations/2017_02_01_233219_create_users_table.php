@@ -11,9 +11,11 @@ class CreateUsersTable extends Migration {
 			$table->increments('id');
 			$table->timestamps();
 			$table->string('name')->unique();
+			$table->string('company_name');
 			$table->string('email')->unique();
 			$table->string('password');
 			$table->rememberToken();
+			$table->string('phone');
 			$table->enum('role', array('user', 'redac', 'admin'));
 			$table->boolean('valid')->default(false);
 		});

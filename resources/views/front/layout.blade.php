@@ -76,12 +76,11 @@
 					<li {{ currentRoute('contacts.create') }}>
 						<a href="{{ route('contacts.create') }}">@lang('Contact')</a>
 					</li>
-				@endguest
-				@request('register')
-					<li class="current">
-						<a href="{{ request()->url() }}">@lang('Register')</a>
+
+					<li {{ currentRoute('register') }}>
+						<a href="{{ route('register') }}">@lang('Register')</a>
 					</li>
-				@endrequest
+				@endguest
 				@request('password/email')
 					<li class="current">
 						<a href="{{ request()->url() }}">@lang('Forgotten password')</a>

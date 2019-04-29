@@ -19,11 +19,13 @@ class DatabaseSeeder extends Seeder
         User::create(
             [
                 'name' => 'GreatAdmin',
-                'email' => 'admin@la.fr',
+                'email' => 'admin@admin.com',
+                'company_name' => 'Company',
                 'password' => bcrypt('admin'),
                 'role' => 'admin',
                 'valid' => true,
                 'confirmed' => true,
+                'phone' => '111-111-1111',
                 'remember_token' => str_random(10),
             ]
         );
@@ -31,10 +33,12 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'GreatRedactor',
                 'email' => 'redac@la.fr',
+                'company_name' => 'Company',
                 'password' => bcrypt('redac'),
                 'role' => 'redac',
                 'valid' => true,
                 'confirmed' => true,
+                'phone' => '111-111-1111',
                 'remember_token' => str_random(10),
             ]
         );
@@ -42,10 +46,12 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Walker',
                 'email' => 'walker@la.fr',
+                'company_name' => 'Company',
                 'password' => bcrypt('walker'),
                 'role' => 'user',
                 'valid' => true,
                 'confirmed' => true,
+                'phone' => '111-111-1111',
                 'remember_token' => str_random(10),
             ]
         );
@@ -53,10 +59,12 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Slacker',
                 'email' => 'slacker@la.fr',
+                'company_name' => 'Company',
                 'password' => bcrypt('slacker'),
                 'role' => 'user',
                 'valid' => true,
                 'confirmed' => true,
+                'phone' => '111-111-1111',
                 'remember_token' => str_random(10),
             ]
         );
@@ -64,10 +72,12 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Worker',
                 'email' => 'worker@la.fr',
+                'company_name' => 'Company',
                 'password' => bcrypt('worker'),
                 'role' => 'user',
                 'valid' => false,
                 'confirmed' => true,
+                'phone' => '111-111-1111',
                 'remember_token' => str_random(10),
             ]
         );
@@ -86,10 +96,12 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Sorditofublos',
                 'email' => 'sordi@la.fr',
+                'company_name' => 'Company',
                 'password' => bcrypt('sordi'),
                 'role' => 'user',
                 'valid' => true,
                 'confirmed' => true,
+                'phone' => '111-111-1111',
                 'remember_token' => str_random(10),
             ]
         );
@@ -97,10 +109,12 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Martinobinus',
                 'email' => 'martin@la.fr',
+                'company_name' => 'Company',
                 'password' => bcrypt('martin'),
                 'role' => 'user',
                 'valid' => false,
                 'confirmed' => false,
+                'phone' => '111-111-1111',
                 'remember_token' => str_random(10),
             ]
         );
