@@ -61,6 +61,9 @@
 
 	   	<nav id="main-nav-wrap">
 			<ul class="main-navigation sf-menu">
+				<li {{ currentRoute('home') }}>
+					<a href="{{ route('home') }}">@lang('Home')</a>
+				</li>
 				
 				@guest
 					
@@ -109,7 +112,7 @@
 			</ul>
 		</nav> <!-- end main-nav-wrap -->
 
-
+		
 
 		<div class="triggers">
 			<a class="menu-toggle" href="#"><span>Menu</span></a>
@@ -123,7 +126,7 @@
 
    <!-- footer
    ================================================== -->
-
+   
    <div id="preloader">
     	<div id="loader"></div>
    </div>
