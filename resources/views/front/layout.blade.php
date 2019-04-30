@@ -66,11 +66,7 @@
 				</li>
 				
 				@guest
-					<li {{ currentRoute('contacts.create') }}>
-						<a href="{{ route('contacts.create') }}">@lang('Contact')</a>
-					</li>
-
-
+					
 					<li {{ currentRoute('register') }}>
 						<a href="{{ route('register') }}">@lang('Register')</a>
 					</li>
