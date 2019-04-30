@@ -61,9 +61,6 @@
 
 	   	<nav id="main-nav-wrap">
 			<ul class="main-navigation sf-menu">
-				<li {{ currentRoute('home') }}>
-					<a href="{{ route('home') }}">@lang('Home')</a>
-				</li>
 				
 				@guest
 					
