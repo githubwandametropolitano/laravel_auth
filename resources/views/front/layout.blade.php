@@ -65,7 +65,7 @@
 				@guest
 					
 					<li {{ currentRoute('register') }}>
-						<a href="{{ route('register') }}">@lang('Register')</a>
+						<a href="{{ route('register') }}">@lang('Sign up')</a>
 					</li>
 				@endguest
 				@request('password/email')
