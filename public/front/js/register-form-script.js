@@ -22,7 +22,7 @@ function submitForm(){
 
 function regformSuccess(){
     $("#signupForm")[0].reset();
-    submitMSG(true, "Sign up successfully!")
+    regsubmitMSG(true, "Sign up successfully!")
 }
 
 function regFormError(){

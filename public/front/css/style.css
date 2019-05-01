@@ -73,7 +73,7 @@ li {
 }
 
 p {
-  color: #505050;/*DARK Grey*/
+  color: rgb(127, 9, 100);
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -113,9 +113,6 @@ span {
   border-color: #adadad;/*LIGHTer Grey*/
 }
 
-.fa {
-  font-size: 13px;
-}
 
 /* Back to top button */
 .back-to-top {

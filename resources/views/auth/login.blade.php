@@ -15,6 +15,7 @@
                 </div>
         </div>
         <div class="col-lg-6 col-md-8 col-10" id="gg">
+            <div class="col-md-12">
             @if (session('confirmation-success'))
                 @component('front.components.alert')
                     @slot('type')
@@ -23,6 +24,7 @@
                     {!! session('confirmation-success') !!}
                 @endcomponent
             @endif
+            </div>
             <div class="login-block">
                 <form id="loginForm" role="form" method="POST" action="{{route('login')}}">
                     {{ csrf_field() }}

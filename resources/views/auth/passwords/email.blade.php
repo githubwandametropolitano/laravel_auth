@@ -25,8 +25,14 @@
                 @endcomponent
             @endif
                 <div class="link-block">
-                <form id="linkForm" role="form" method="POST" action="{{route('login')}}">
-                    {{ csrf_field() }}
+                <form id="linkForm" role="form" method="POST" action="{{ route('password.email') }}">
+                   
+                        {{ csrf_field() }}
+                        @if ($errors->has('email'))
+                            @component('front.components.error')
+                                {{ $errors->first('email') }}
+                            @endcomponent
+                        @endif
                     <div class="row">
                        
                         <div class="col-md-12">
@@ -36,7 +42,7 @@
                             </div>
                             <div class="submit-button text-center">
                                 <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Send Password Reset Link</button>
-                                <div id="linkSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                <div id="emailSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
                                 <div class="clearfix"></div> 
                             </div>  
                         </div>

@@ -5,7 +5,7 @@ $("#linkForm").validator().on("submit", function (event) {
         emailsubmitMSG(false, "Please enter your email.");
     } else {
         // everything looks good!
-        event.preventDefault();
+        // event.preventDefault();
         submitForm();
     }
 });
@@ -13,7 +13,7 @@ $("#linkForm").validator().on("submit", function (event) {
 
 function submitForm(){
     // Initiate Variables With Form Content
-    var email = $("#email").val();
+    $("#linkForm").submit();
     
 
 
@@ -21,7 +21,7 @@ function submitForm(){
 
 function emailformSuccess(){
     $("#linkForm")[0].reset();
-    submitMSG(true, "We've emailed your password reset link!")
+    emailsubmitMSG(true, "We've emailed your password reset link!")
 }
 
 function emailformError(){

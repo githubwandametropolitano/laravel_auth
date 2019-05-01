@@ -11,25 +11,26 @@
                     <hr style="width:120px;border:1px solid black;">
                     
                 </div>
+
         </div>
         <div class="col-lg-6 col-md-8 col-10" id="gg">
-
+            <div class="col-md-12">
+                <div class="form-group">
+                    @if (session('confirmation-success'))
+                        @component('front.components.alert')
+                            @slot('type')
+                                success
+                            @endslot
+                            {!! session('confirmation-success') !!}
+                        @endcomponent
+                    @endif
+                </div>
+            </div>
             <div class="signup-block">
                 <form id="signupForm" role="form" method="POST" action="{{route('register')}}">
                     {{ csrf_field() }}
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                @if (session('confirmation-success'))
-                                    @component('front.components.alert')
-                                        @slot('type')
-                                            success
-                                        @endslot
-                                        {!! session('confirmation-success') !!}
-                                    @endcomponent
-                                @endif
-                            </div>
-                        </div>
+
                         <div class="col-md-12">
                             <div class="form-group">
                                 <input type="text" placeholder="Your Company" id="company" class="form-control" name="company_name" required data-error="Please enter your company">

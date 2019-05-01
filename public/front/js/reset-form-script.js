@@ -20,11 +20,11 @@ function submitForm(){
 
 function resetformSuccess(){
     $("#resetForm")[0].reset();
-    submitMSG(true, "New password created!")
+    resetsubmitMSG(true, "New password created!")
 }
 
 function resetformError(){
-    $("#linkForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $("#resetForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
     });
 }

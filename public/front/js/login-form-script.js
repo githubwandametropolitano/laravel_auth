@@ -2,7 +2,7 @@ $("#loginForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         loginformError();
-        loginsubmitMSG(false, "Please fill all fields to sign up.");
+        loginsubmitMSG(false, "Please enter your credential to log in.");
     } else {
         // everything looks good!
         // event.preventDefault();
@@ -21,7 +21,7 @@ function submitForm(){
 
 function loginformSuccess(){
     $("#loginForm")[0].reset();
-    submitMSG(true, "Sign up successfully!")
+    loginsubmitMSG(true, "Login successfully!")
 }
 
 function loginformError(){
