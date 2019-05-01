@@ -28,6 +28,11 @@
             <div class="login-block">
                 <form id="loginForm" role="form" method="POST" action="{{route('login')}}">
                     {{ csrf_field() }}
+                    @if ($errors->has('log'))
+                        @component('front.components.error')
+                            {{ $errors->first('log') }}
+                        @endcomponent
+                    @endif
                     <div class="row">
                         
                         <div class="col-md-12">

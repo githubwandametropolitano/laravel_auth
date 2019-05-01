@@ -1,7 +1,7 @@
 @extends('front.layout')
 
 @section('main')
-<div class="box2" style="height:auto;width:100%;background-color:#f8f9f9;margin-top:50px;padding-top:80px;">
+<div class="box2" style="height:auto;width:100%;background-color:#f8f9f9;margin-top:30px;padding-top:60px;">
    <!-- content
    ================================================== -->
     <section id="reset" class="padd-section wow fadeInUp">
@@ -61,7 +61,7 @@
                         
                             <div class="submit-button text-center">
                                 <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Reset password</button>
-                                <div id="resetSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                <div id="resetSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:5px"></div> 
                                 <div class="clearfix"></div> 
                             </div>
                         </div>
