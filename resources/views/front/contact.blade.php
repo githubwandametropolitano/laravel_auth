@@ -1,70 +1,56 @@
 @extends('front.layout')
 
 @section('main')
-
+<div class="box2" style="height:auto;width:100%;background-color:#f8f9f9;margin-top:50px;padding-top:80px;">
    <!-- content
    ================================================== -->
-   <section id="content-wrap" class="site-page">
-   	<div class="row">
-   		<div class="col-twelve">
-
-   			<section>  
-
-                <div class="primary-content">
-
-						<h1 class="entry-title add-bottom">@lang('Get In Touch With Us')</h1>
-
-						<p class="lead">@lang('Lorem ipsum Deserunt est dolore Ut Excepteur nulla occaecat magna occaecat Excepteur nisi esse veniam dolor consectetur minim qui nisi esse deserunt commodo ea enim ullamco non voluptate consectetur minim aliquip Ut incididunt amet ut cupidatat.')</p>
-
-						<p>@lang('Duis ex ad cupidatat tempor Excepteur cillum cupidatat fugiat nostrud cupidatat dolor sunt sint sit nisi est eu exercitation incididunt adipisicing veniam velit id fugiat enim mollit amet anim veniam dolor dolor irure velit commodo cillum sit nulla ullamco magna amet magna cupidatat qui labore cillum sit in tempor veniam consequat non laborum adipisicing aliqua ea nisi sint ut quis proident ullamco ut dolore culpa occaecat ut laboris in sit minim cupidatat ut dolor voluptate enim veniam consequat occaecat fugiat in adipisicing in amet Ut nulla nisi non ut enim aliqua laborum mollit quis nostrud sed sed.')</p>
-
-						<div class="row">
-							<div class="col-six tab-full">
-								<h4>@lang('Where to Find Us')</h4>
-					  			<p>@lang('1600 Amphitheatre Parkway<br>Mountain View, CA<br>94043 US')</p>
-							</div>
-							<div class="col-six tab-full">
-								<h4>@lang('Contact Info')</h4>
-					  			<p>@lang('someone@abstractwebsite.com<br>info@abstractwebsite.com<br>Phone: (+63) 555 1212')</p>
-							</div>
-						</div>
-
-                        @if (session('ok'))
-                            @component('front.components.alert')
-                                @slot('type')
-                                    success
-                                @endslot
-                                {!! session('ok') !!}
-                            @endcomponent
-                        @endif
-
-						<form method="post" action="{{ route('contacts.store') }}">
-                            {{ csrf_field() }}
-                            @if ($errors->has('name'))
-                                @component('front.components.error')
-                                    {{ $errors->first('name') }}
-                                @endcomponent
-                            @endif 
-                            <input id="name" placeholder="@lang('Your name')" type="text" class="full-width"  name="name" value="{{ old('name') }}" required autofocus>
-                            @if ($errors->has('email'))
-                                @component('front.components.error')
-                                    {{ $errors->first('email') }}
-                                @endcomponent
-                            @endif 
-                            <input id="email" placeholder="@lang('Your email')" type="email" class="full-width"  name="email" value="{{ old('email') }}" required>
-                            @if ($errors->has('message'))
-                                @component('front.components.error')
-                                    {{ $errors->first('message') }}
-                                @endcomponent
-                            @endif 
-                            <textarea name="message" id="message" class="full-width" placeholder="@lang('Your message')" ></textarea>
-                            <button type="submit" class="submit button-primary full-width-on-mobile">Submit</button>
-  				        </form> <!-- end form -->
-                    </div>
-			</section>
-   		   		
-		</div> <!-- end col-twelve -->
-   	</div> <!-- end row -->
-   </section> <!-- end content --> 
+    <section id="contact" class="padd-section wow fadeInUp">
+                           
+        <div class="row justify-content-center" style="width:100%">
+                <div class="col-lg-12 col-md-8 col-12">
+                        
+                    <h1 style="text-align:center;color:#7f0964;font-weight:bold;font-size:35;letter-spacing:4px;padding-bottom:4px;">CONTACT</h1>
+                    <hr style="width:120px;border:1px solid black;">
+                    <center>
+                        <div class="col-lg-7 col-md-12 col-12">
+                            <p style="font-size:16px;">We'd love to hear from you! Please contact us at anytime by emailing us at<Span style="color:#7f0964;font-weight:bold"> hello@sirivisa.com</Span> or fill out our contact form below and we'll respond really soon, promise.</p>
+                       </div>
+                   </center>
+                </div>
+        </div>
+        <div class="col-lg-6 col-md-8 col-10" id="gg">
+                <div class="contact-block">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="conname" name="conname" placeholder="Your Name" required data-error="Please enter your name">
+                                    <div class="help-block with-errors"></div>
+                                </div>                                 
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Email" id="conemail" class="form-control" name="conemail" required data-error="Please enter your email">
+                                    <div class="help-block with-errors"></div>
+                                </div> 
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group"> 
+                                    <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="submit-button text-center">
+                                    <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Send Message</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden" style="color:#7f0964;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                    <div class="clearfix"></div> 
+                                </div>
+                            </div>
+                        </div>           
+                    </form>
+                </div>
+        </div>
+                                                 
+    </section>
+</div>
       
 @endsection

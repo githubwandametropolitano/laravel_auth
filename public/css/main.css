@@ -129,8 +129,15 @@ h2, .h02 {
 	line-height: 1.25;
 }
 h3, .h03 {
+	text-align: center;
+    color: #7f0964;
+    font-weight: bold;
+    font-size: 35;
+    letter-spacing: 4px;
+    padding-bottom: 4px;
 	font-size: 2rem;
 	line-height: 1.5;
+	margin: 0;
 }
 h4, .h04 {
 	font-size: 1.7rem;
@@ -749,8 +756,11 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: #151515;
-	color: #FFFFFF;
+	background-color: rgb(127, 9, 100);
+    letter-spacing: 1px;
+    pointer-events: all;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .button.button-primary:hover,
@@ -1554,7 +1564,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 header {
 	width: 100%;
-	background: #DBDBDB url(../images/escheresque_@2X.png) repeat;
+	
 	background-size: 46px 29px;
 	height: 130px;
 	border-bottom: 1px solid #E5E5E5;

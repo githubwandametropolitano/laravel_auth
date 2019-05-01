@@ -16,13 +16,35 @@
 | Frontend
 |--------------------------------------------------------------------------|
 */
-
+// Authentification
+Auth::routes();
 // Home
 Route::name('home')->get('/', 'Front\PostController@index');
 
-// Contact
-Route::resource('contacts', 'Front\ContactController', ['only' => ['create', 'store']]);
+Route::name('about')->get('/about', function () {
+    //return view('welcome');
+    return view('front/about');
+});
 
+// Contact
+Route::name('contact')->get('/contact', function () {
+    //return view('welcome');
+    return view('front/contact');
+});
+
+Route::name('content')->get('/content', function () {
+    //return view('welcome');
+    return view('front/content');
+});
+Route::name('creative')->get('/creative', function () {
+    //return view('welcome');
+    return view('front/creative');
+});
+
+Route::name('consulting')->get('/consulting', function () {
+    //return view('welcome');
+    return view('front/consulting');
+});
 // Posts and comments
 Route::prefix('posts')->namespace('Front')->group(function () {
     Route::name('posts.display')->get('{slug}', 'PostController@show');
@@ -40,8 +62,7 @@ Route::resource('comments', 'Front\CommentController', [
 
 Route::name('category')->get('category/{category}', 'Front\PostController@category');
 
-// Authentification
-Auth::routes();
+
 
 
 /*

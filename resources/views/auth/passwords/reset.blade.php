@@ -1,39 +1,47 @@
 @extends('front.layout')
 
 @section('main')
-   <section id="content-wrap">
-        <div class="row">
-            <div class="col-twelve">
-                <div class="primary-content">
-                    @if (session('status'))
-                        @component('front.components.alert')
-                            @slot('type')
-                                success
-                            @endslot
-                            <p>{{ session('status') }}</p>
-                        @endcomponent
-                    @endif
-                    <h3>@lang('Reset Password')</h3>
-                    <form role="form" method="POST" action="{{ route('password.request') }}">
-                        {{ csrf_field() }}
-                        <input type="hidden" name="token" value="{{ $token }}">
-                        @if ($errors->has('email'))
-                            @component('front.components.error')
-                                {{ $errors->first('email') }}
-                            @endcomponent
-                        @endif                          
-                        <input id="email" placeholder="@lang('Email')" type="email" class="full-width"  name="email" value="{{ old('email') }}" required>
-                        @if ($errors->has('password'))
-                            @component('front.components.error')
-                                {{ $errors->first('password') }}
-                            @endcomponent
-                        @endif 
-                        <input id="password" placeholder="@lang('Password')" type="password" class="full-width"  name="password" required>
-                        <input id="password-confirm" placeholder="@lang('Confirm your password')" type="password" class="full-width" name="password_confirmation" required>
-                        <input class="button-primary full-width-on-mobile" type="submit" value="@lang('Reset Password')">
-                    </form>
+<div class="box2" style="height:auto;width:100%;background-color:#f8f9f9;margin-top:50px;padding-top:80px;">
+   <!-- content
+   ================================================== -->
+    <section id="reset" class="padd-section wow fadeInUp">
+                           
+        <div class="row justify-content-center" style="width:100%">
+                <div class="col-lg-12 col-md-8 col-12">
+                        
+                    <h1 style="text-align:center;color:#7f0964;font-weight:bold;font-size:35;letter-spacing:4px;padding-bottom:4px;">Reset password</h1>
+                    <hr style="width:120px;border:1px solid black;">
+                    
                 </div>
+        </div>
+        <div class="col-lg-6 col-md-8 col-10" id="gg">
+            <div class="login-block">
+                <form id="resetForm" role="form" method="POST" action="{{Route('login')}}" >
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" id="newpassword" class="form-control" name="new_password" required data-error="Please enter your password">
+                                <div class="help-block with-errors"></div>
+                            </div> 
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="password" placeholder="Password confirm" id="password-confirm" class="form-control" name="password_confirm" required data-error="Please confirm your password">
+                                <div class="help-block with-errors"></div>
+                            </div> 
+                        </div>
+                        <div class="submit-button text-center">
+                                <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Reset password</button>
+                                <div id="msgSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                <div class="clearfix"></div> 
+                        </div>
+                        
+                    </div>          
+                </form>
             </div>
         </div>
+                                                 
     </section>
+</div>
 @endsection
