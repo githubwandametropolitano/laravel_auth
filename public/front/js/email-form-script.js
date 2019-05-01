@@ -21,7 +21,7 @@ function submitForm(){
 
 function emailformSuccess(){
     $("#linkForm")[0].reset();
-    emailsubmitMSG(true, "We've emailed your password reset link!")
+    emailsubmitMSG(true, "We've emailed your password reset link! Please check up your email.")
 }
 
 function emailformError(){
