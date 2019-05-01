@@ -38,7 +38,7 @@
                                         {{ $errors->first('email') }}
                                     @endcomponent
                                 @endif
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+                                <input type="email" placeholder="Your email" class="form-control" name="email" value="{{ old('email') }}" required>
                                 <div class="help-block with-errors"></div>
                             </div> 
                         </div>
