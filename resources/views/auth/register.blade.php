@@ -22,7 +22,7 @@
                 @endcomponent
             @endif
             <div class="signup-block">
-                <form id="signupForm" role="form" method="POST" action="{{route('login')}}">
+                <form id="signupForm" role="form" method="POST" action="{{route('register')}}">
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="col-md-12">
