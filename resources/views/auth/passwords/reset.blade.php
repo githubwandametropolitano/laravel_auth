@@ -30,13 +30,13 @@
                                 <input type="password" placeholder="Password confirm" id="password-confirm" class="form-control" name="password_confirm" required data-error="Please confirm your password">
                                 <div class="help-block with-errors"></div>
                             </div> 
-                        </div>
-                        <div class="submit-button text-center">
-                                <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Reset password</button>
-                                <div id="msgSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
-                                <div class="clearfix"></div> 
-                        </div>
                         
+                            <div class="submit-button text-center">
+                                    <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Reset password</button>
+                                    <div id="resetSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                    <div class="clearfix"></div> 
+                            </div>
+                        </div>
                     </div>          
                 </form>
             </div>
