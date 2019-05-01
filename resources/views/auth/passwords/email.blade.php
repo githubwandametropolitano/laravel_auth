@@ -1,7 +1,7 @@
 @extends('front.layout')
 
 @section('main')
-<div class="box2" style="height:500px;width:100%;background-color:#f8f9f9;margin-top:50px;padding-top:80px;">
+<div class="box2" style="width:100%;background-color:#f8f9f9;margin-top:50px;padding-top:80px;">
     <section id="email-request">
          <div class="row justify-content-center" style="width:100%">
                 <div class="col-lg-12 col-md-8 col-12">
@@ -16,14 +16,17 @@
                 </div>
         </div>
         <div class="col-lg-6 col-md-8 col-10" id="gg">
-            @if (session('status'))
-                @component('front.components.alert')
-                    @slot('type')
-                        success
-                    @endslot
-                    <p>{{ session('status') }}</p>
-                @endcomponent
-            @endif
+                <div class="col-md-12">
+               
+                @if (session('status'))
+                    @component('front.components.alert')
+                        @slot('type')
+                            success
+                        @endslot
+                        <p>{{ session('status') }}</p>
+                    @endcomponent
+                @endif                 
+                </div>
                 <div class="link-block">
                 <form id="linkForm" role="form" method="POST" action="{{ route('password.email') }}">
                    

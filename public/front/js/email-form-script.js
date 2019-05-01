@@ -36,5 +36,5 @@ function emailsubmitMSG(valid, msg){
     } else {
         var msgClasses = "h3 text-center text-danger";
     }
-    $("#linkSubmit").removeClass().addClass(msgClasses).text(msg);
+    $("#emailSubmit").removeClass().addClass(msgClasses).text(msg);
 }

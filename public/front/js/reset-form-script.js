@@ -2,7 +2,7 @@ $("#resetForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         resetformError();
-        resetsubmitMSG(false, "Please type your email.");
+        resetsubmitMSG(false, "Please enter your new password.");
     } else {
         // everything looks good!
         //event.preventDefault();
