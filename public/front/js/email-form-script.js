@@ -2,7 +2,7 @@ $("#linkForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
-        submitMSG(false, "Please type your email.");
+        submitMSG(false, "Please enter your email.");
     } else {
         // everything looks good!
         event.preventDefault();
