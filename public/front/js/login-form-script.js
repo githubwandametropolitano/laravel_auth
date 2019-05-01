@@ -2,7 +2,7 @@ $("#loginForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         loginformError();
-        submitMSG(false, "Please fill all fields to sign up.");
+        loginsubmitMSG(false, "Please fill all fields to sign up.");
     } else {
         // everything looks good!
         // event.preventDefault();
@@ -30,7 +30,7 @@ function loginformError(){
     });
 }
 
-function submitMSG(valid, msg){
+function loginsubmitMSG(valid, msg){
     if(valid){
         var msgClasses = "h3 text-center tada animated text-success";
     } else {

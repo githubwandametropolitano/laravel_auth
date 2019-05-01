@@ -2,7 +2,7 @@ $("#resetForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         resetformError();
-        submitMSG(false, "Please type your email.");
+        resetsubmitMSG(false, "Please type your email.");
     } else {
         // everything looks good!
         //event.preventDefault();
@@ -29,7 +29,7 @@ function resetformError(){
     });
 }
 
-function submitMSG(valid, msg){
+function resetsubmitMSG(valid, msg){
     if(valid){
         var msgClasses = "h3 text-center tada animated text-success";
     } else {

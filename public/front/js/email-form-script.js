@@ -2,7 +2,7 @@ $("#linkForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         emailformError();
-        submitMSG(false, "Please enter your email.");
+        emailsubmitMSG(false, "Please enter your email.");
     } else {
         // everything looks good!
         event.preventDefault();
@@ -30,7 +30,7 @@ function emailformError(){
     });
 }
 
-function submitMSG(valid, msg){
+function emailsubmitMSG(valid, msg){
     if(valid){
         var msgClasses = "h3 text-center tada animated text-success";
     } else {

@@ -3,7 +3,7 @@ $("#signupForm").validator().on("submit", function (event) {
         console.log("aaaa");
         // handle the invalid form...
         regFormError();
-        submitMSG(false, "Please fill all fields to sign up.");
+        regsubmitMSG(false, "Please fill all fields to sign up.");
     } else {
         // everything looks good!
         // event.preventDefault();
@@ -31,7 +31,7 @@ function regFormError(){
     });
 }
 
-function submitMSG(valid, msg){
+function regsubmitMSG(valid, msg){
     if(valid){
         var msgClasses = "h3 text-center tada animated text-success";
     } else {
