@@ -196,6 +196,8 @@
     <script src="{{asset('front/js/contact-form-script.js')}}"></script>
     <script src="{{asset('front/js/login-form-script.js')}}"></script>
     <script src="{{asset('front/js/register-form-script.js')}}"></script>
+    <script src="{{asset('front/js/email-form-script.js')}}"></script>
+    <script src="{{asset('front/js/reset-form-script.js')}}"></script>
     <!-- Template Main Javascript File -->
     <script src="{{asset('front/js/main.js')}}"></script>
     <script src="{{asset('front/js/wow.js')}}"></script>
