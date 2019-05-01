@@ -16,7 +16,7 @@
         </div>
         <div class="col-lg-6 col-md-8 col-10" id="gg">
             <div class="login-block">
-                <form id="resetForm" role="form" method="POST" action="{{Route('reset')}}" >
+                <form id="resetForm" role="form" method="POST" action="{{Route('login')}}" >
                     <div class="row">
                         
                         <div class="col-md-12">
