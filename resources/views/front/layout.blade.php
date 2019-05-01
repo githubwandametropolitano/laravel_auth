@@ -201,6 +201,7 @@
     <!-- Template Main Javascript File -->
     <script src="{{asset('front/js/main.js')}}"></script>
     <script src="{{asset('front/js/wow.js')}}"></script>
+    <script src="{{asset('front/js/smoothscroll.js')}}"></script>  
 
     <script>
         (function() {

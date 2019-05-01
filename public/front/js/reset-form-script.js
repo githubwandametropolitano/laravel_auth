@@ -1,7 +1,7 @@
 $("#resetForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
-        formError();
+        resetformError();
         submitMSG(false, "Please type your email.");
     } else {
         // everything looks good!
@@ -18,12 +18,12 @@ function submitForm(){
 
 }
 
-function formSuccess(){
+function resetformSuccess(){
     $("#resetForm")[0].reset();
     submitMSG(true, "New password created!")
 }
 
-function formError(){
+function resetformError(){
     $("#linkForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
     });

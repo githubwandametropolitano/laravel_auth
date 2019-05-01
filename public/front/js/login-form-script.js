@@ -1,7 +1,7 @@
 $("#loginForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
-        formError();
+        loginformError();
         submitMSG(false, "Please fill all fields to sign up.");
     } else {
         // everything looks good!
@@ -19,12 +19,12 @@ function submitForm(){
     
 }
 
-function formSuccess(){
+function loginformSuccess(){
     $("#loginForm")[0].reset();
     submitMSG(true, "Sign up successfully!")
 }
 
-function formError(){
+function loginformError(){
     $("#loginForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
     });

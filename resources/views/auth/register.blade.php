@@ -13,18 +13,23 @@
                 </div>
         </div>
         <div class="col-lg-6 col-md-8 col-10" id="gg">
-            @if (session('confirmation-success'))
-                @component('front.components.alert')
-                    @slot('type')
-                        success
-                    @endslot
-                    {!! session('confirmation-success') !!}
-                @endcomponent
-            @endif
+
             <div class="signup-block">
                 <form id="signupForm" role="form" method="POST" action="{{route('register')}}">
                     {{ csrf_field() }}
                     <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                @if (session('confirmation-success'))
+                                    @component('front.components.alert')
+                                        @slot('type')
+                                            success
+                                        @endslot
+                                        {!! session('confirmation-success') !!}
+                                    @endcomponent
+                                @endif
+                            </div>
+                        </div>
                         <div class="col-md-12">
                             <div class="form-group">
                                 <input type="text" placeholder="Your Company" id="company" class="form-control" name="company_name" required data-error="Please enter your company">
@@ -45,15 +50,24 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
+                                <input type="text" placeholder="Phone Number" id="phone" class="form-control" name="phone" required data-error="Please enter your phone number">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
                                 <input type="password" placeholder="Password" id="password" class="form-control" name="password" required data-error="Please enter your password">
                                 <div class="help-block with-errors"></div>
                             </div> 
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" placeholder="Phone Number" id="phone" class="form-control" name="phone" required data-error="Please enter your phone number">
+                                <input type="password" placeholder="Confirm Password" id="confirm_password" class="form-control" name="password_confirmation" required data-error="Please enter your confirm password">
                                 <div class="help-block with-errors"></div>
-                            </div>
+                            </div> 
+                        </div>
+
+                        <div class="col-md-12">                           
                             <div class="submit-button text-center">
                                 <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Sign up</button>
                                 <div id="sigSubmit" class="h3 text-center hidden" style="color:#7f0964;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
