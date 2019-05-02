@@ -162,7 +162,7 @@
                                         <ul class="list-unstyled">
                                             <div class="copyrights">
                                                 <div class="container">
-                                                    <p style="font-size:10px">&copy;Copyrights <a href="{{route('home')}}" style="color: rgb(127, 9, 100);text-decoration: underline;">www.sirivisacreative.com</a><br>All rights reserved 2019</p>
+                                                    <p style="font-size:10px">&copy;Copyrights <a href="{{route('home')}}" style="color: #505050">www.sirivisacreative.com</a><br>All rights reserved 2019</p>
 
                                                 </div>
                                             </div>
