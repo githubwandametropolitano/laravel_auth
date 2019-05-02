@@ -21,7 +21,7 @@
                             @slot('type')
                                 success
                             @endslot
-                            {!! session('confirmation-success') !!}
+                            <p style="color: rgb(127, 9, 100);">{!! session('confirmation-success') !!}</p>
                         @endcomponent
                     @endif
                

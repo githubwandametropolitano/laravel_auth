@@ -28,7 +28,7 @@
                         @slot('type')
                             success
                         @endslot
-                        <p>{{ session('status') }}</p>
+                        <p style="color: rgb(127, 9, 100);">{{ session('status') }}</p>
                     @endcomponent
                 @endif                 
                 </div>
