@@ -28,15 +28,16 @@
             <div class="login-block">
                 <form id="loginForm" role="form" method="POST" action="{{route('login')}}">
                     {{ csrf_field() }}
-                    @if ($errors->has('log'))
-                        @component('front.components.error')
-                            {{ $errors->first('log') }}
-                        @endcomponent
-                    @endif
+                    
                     <div class="row">
                         
                         <div class="col-md-12">
                             <div class="form-group">
+                                @if ($errors->has('log'))
+                                    @component('front.components.error')
+                                        {{ $errors->first('log') }}
+                                    @endcomponent
+                                @endif
                                 <input type="Email" placeholder="Your Email" id="email" class="form-control" name="log" value="{{ old('log') }}" required data-error="Please enter your email">
                                 <div class="help-block with-errors"></div>
                             </div> 
@@ -47,14 +48,13 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="submit-button text-center">
-                                <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Log in</button>
-                                <div id="loginSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Log in</button><br>
+                                 
                                 <div class="clearfix"></div> 
-                               
-                                       
+                                                                    
                                         <a href="{{ route('password.request') }}">
                                             Forgot Your Password?
-                                        </a><br><br>
+                                        </a><br>
                                         <a href="{{ route('register') }}">
                                             Not Signed Up?
                                         </a>

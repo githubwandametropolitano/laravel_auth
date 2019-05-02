@@ -45,6 +45,11 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
+                                @if ($errors->has('email'))
+                                    @component('front.components.error')
+                                        {{ $errors->first('email') }}
+                                    @endcomponent
+                                @endif
                                 <input type="Email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
                                 <div class="help-block with-errors"></div>
                             </div> 
@@ -63,7 +68,12 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="password" placeholder="Confirm Password" id="confirm_password" class="form-control" name="password_confirmation" required data-error="Please enter your confirm password">
+                                @if ($errors->has('password'))
+                                    @component('front.components.error')
+                                        {{ $errors->first('password') }}
+                                    @endcomponent
+                                @endif
+                                <input type="password" placeholder="Re-type Password" id="confirm_password" class="form-control" name="password_confirmation" required data-error="Please enter your confirm password">
                                 <div class="help-block with-errors"></div>
                             </div> 
                         </div>
@@ -71,7 +81,7 @@
                         <div class="col-md-12">                           
                             <div class="submit-button text-center">
                                 <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Sign up</button>
-                                <div id="sigSubmit" class="h3 text-center hidden" style="color:#7f0964;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                
                                 <div class="clearfix"></div> 
                             </div>
                         </div>

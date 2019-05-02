@@ -11,6 +11,11 @@
                     <center>
                         <div class="col-lg-7 col-md-12 col-12">
                             <p style="font-size:16px;">You have forgotten your password, dont mind ! You can create a new one. But for your own security we want to be sure of your identity. So send us your email by filling this form. You will get a message with instruction to create your new password.</p>
+                            @if ($errors->has('email'))
+                                @component('front.components.error')
+                                    {{ $errors->first('email') }}
+                                @endcomponent
+                            @endif
                        </div>
                    </center>
                 </div>
@@ -18,24 +23,13 @@
         <div class="col-lg-6 col-md-8 col-10" id="gg">
                 <div class="col-md-12">
                
-                @if (session('status'))
-                    @component('front.components.alert')
-                        @slot('type')
-                            success
-                        @endslot
-                        <p>{{ session('status') }}</p>
-                    @endcomponent
-                @endif                 
+                                 
                 </div>
                 <div class="link-block">
                 <form id="linkForm" role="form" method="POST" action="{{ route('password.email') }}">
                    
                         {{ csrf_field() }}
-                        @if ($errors->has('email'))
-                            @component('front.components.error')
-                                {{ $errors->first('email') }}
-                            @endcomponent
-                        @endif
+                        
                     <div class="row">
                        
                         <div class="col-md-12">
@@ -45,7 +39,7 @@
                             </div>
                             <div class="submit-button text-center">
                                 <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Send Password Reset Link</button>
-                                <div id="emailSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                <div id="mailSubmit" class="h3 text-center hidden" style="color:#7f0964;text-align:center;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
                                 <div class="clearfix"></div> 
                             </div>  
                         </div>

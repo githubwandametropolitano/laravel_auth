@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="submit-button text-center">
                                     <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Send Message</button>
-                                    <div id="msgSubmit" class="h3 text-center hidden" style="color:#7f0964;letter-spacing:1px;font-size:25px;padding-top:20px"></div> 
+                                   
                                     <div class="clearfix"></div> 
                                 </div>
                             </div>

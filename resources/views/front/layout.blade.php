@@ -48,7 +48,7 @@
 <body style="background-color:#eaeaea;">
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm p-3 mb-5 bg-white rounded">
-        <a class="navbar-brand" href="#" style="color:#7f0964;font-weight:bolder;font-size:20px;">SIRIVISA <span style="color:grey;font-size:18px;">Creative</span></a>
+        <a class="navbar-brand" href="{{ route('home') }}" style="color:#7f0964;font-weight:bolder;font-size:20px;">SIRIVISA <span style="color:grey;font-size:18px;">Creative</span></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon" style="font-size:18px;font-weight:bold;color:#7f0964"><i class="fas fa-bars" style="margin-left:5px;font-size:25px;"></i></span>
