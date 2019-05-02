@@ -23,7 +23,14 @@
         <div class="col-lg-6 col-md-8 col-10" id="gg">
                 <div class="col-md-12">
                
-                                 
+                @if (session('status'))
+                    @component('front.components.alert')
+                        @slot('type')
+                            success
+                        @endslot
+                        <p>{{ session('status') }}</p>
+                    @endcomponent
+                @endif                 
                 </div>
                 <div class="link-block">
                 <form id="linkForm" role="form" method="POST" action="{{ route('password.email') }}">

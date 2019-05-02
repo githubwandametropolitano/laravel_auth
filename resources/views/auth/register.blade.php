@@ -1,7 +1,7 @@
 @extends('front.layout')
 
 @section('main')
-<div class="box2" style="height:auto;width:100%;background-color:#f8f9f9;margin-top:50px;padding-top:80px;">
+<div class="box2" style="height:auto;width:100%;background-color:#f8f9f9;margin-top:30px;padding-top:40px;">
     <section id="signup" class="padd-section wow fadeInUp">
                            
         <div class="row justify-content-center" style="width:100%">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="signup-block">
-                <form id="signupForm" role="form" method="POST" action="{{route('register')}}">
+                <form id="signupForm" role="form" method="POST" action="{{route('register')}}" style="text-align: center">
                     {{ csrf_field() }}
                     <div class="row">
 

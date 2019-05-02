@@ -1,9 +1,8 @@
 @extends('front.layout')
 
 @section('main')
-<div class="box2" style="height:auto;width:100%;background-color:#f8f9f9;margin-top:50px;padding-top:80px;">
-   <!-- content
-   ================================================== -->
+<div class="box2" style="height:auto;width:100%;background-color:#f8f9f9;margin-top:30px;padding-top:40px;">
+  
     <section id="login" class="padd-section wow fadeInUp">
                            
         <div class="row justify-content-center" style="width:100%">
@@ -48,13 +47,13 @@
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="submit-button text-center">
-                                <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Log in</button><br>
+                                <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Log in</button><br><br>
                                  
                                 <div class="clearfix"></div> 
                                                                     
                                         <a href="{{ route('password.request') }}">
                                             Forgot Your Password?
-                                        </a><br>
+                                        </a><br><br>
                                         <a href="{{ route('register') }}">
                                             Not Signed Up?
                                         </a>

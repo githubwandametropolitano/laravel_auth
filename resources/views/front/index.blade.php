@@ -28,8 +28,8 @@
 
                     <img src="{{asset('front/img/a.png')}}" alt="img" class="img-fluid" style="height:80px;">
                     <h4 style="margin-top:10px;color: #7f0964;">Social Media Management</h4>
-                    <p> Expert help with your social media at a fraction of the cost.</p>
-                    <a href="content.html">read more</a>
+                    <p style="color: #505050"> Expert help with your social media at a fraction of the cost.</p>
+                    <a href="{{route('content')}}">read more</a>
 
                 </div>
             </div>
@@ -39,9 +39,9 @@
 
                     <img src="{{asset('front/img/b.png')}}" alt="img" class="img-fluid" style="height:80px;">
                     <h4 style="margin-top:10px;color: #7f0964;">Content Creation</h4>
-                    <p> Let us lend a hand with our creative services and develop engaging content that will elevate your brand.
+                    <p style="color: #505050"> Let us lend a hand with our creative services and develop engaging content that will elevate your brand.
                     </p>
-                    <a href="creative.html">read more</a>
+                    <a href="{{route('creative')}}">read more</a>
 
                 </div>
             </div>
@@ -51,9 +51,9 @@
 
                     <img src="{{asset('front/img/c.png')}}" alt="img" class="img-fluid" style="height:80px;">
                     <h4 style="margin-top:10px;color: #7f0964;">Creative Consulting</h4>
-                    <p>Get the help you need with your marketing efforts from a friendly team of specialists!
+                    <p style="color: #505050">Get the help you need with your marketing efforts from a friendly team of specialists!
                     </p>
-                    <a href="Consulting.html">read more</a>
+                    <a href="{{route('consulting')}}">read more</a>
 
                 </div>
             </div>
