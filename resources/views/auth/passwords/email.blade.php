@@ -10,7 +10,7 @@
                     <hr style="width:120px;border:1px solid black;">
                     <center>
                         <div class="col-lg-7 col-md-12 col-12">
-                            <p style="font-size:16px;">You have forgotten your password, dont mind ! You can create a new one. But for your own security we want to be sure of your identity. So send us your email by filling this form. You will get a message with instruction to create your new password.</p>
+                            <p style="font-size:16px;color:#505050">You have forgotten your password, don't mind ! You can create a new one. But for your own security we want to be sure of your identity. So send us your email by filling this form. You will get a message with instruction to create your new password.</p>
                             @if ($errors->has('email'))
                                 @component('front.components.error')
                                     {{ $errors->first('email') }}

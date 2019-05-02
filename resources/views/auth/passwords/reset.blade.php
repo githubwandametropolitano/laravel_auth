@@ -44,11 +44,13 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
+                                <div style="text-align: center;">
                                 @if ($errors->has('password'))
                                     @component('front.components.error')
                                         {{ $errors->first('password') }}
                                     @endcomponent
-                                @endif 
+                                @endif
+                                </div>
                                 <input type="password" placeholder="New Password" id="newpassword" class="form-control" name="password" required data-error="Please enter your password">
                                 <div class="help-block with-errors"></div>
                             </div> 
