@@ -15,7 +15,7 @@
         </div>
         <div class="col-lg-6 col-md-8 col-10" id="gg">
             <div class="col-md-12">
-                <div class="form-group">
+               
                     @if (session('confirmation-success'))
                         @component('front.components.alert')
                             @slot('type')
@@ -24,10 +24,10 @@
                             {!! session('confirmation-success') !!}
                         @endcomponent
                     @endif
-                </div>
+               
             </div>
             <div class="signup-block">
-                <form id="signupForm" role="form" method="POST" action="{{route('register')}}" style="text-align: center">
+                <form id="signupForm" role="form" method="POST" action="{{route('register')}}">
                     {{ csrf_field() }}
                     <div class="row">
 
@@ -44,14 +44,14 @@
                             </div> 
                         </div>
                         <div class="col-md-12">
-                            <div class="form-group">
+                            <div class="form-group" style="text-align: center;">
                                 @if ($errors->has('email'))
                                     @component('front.components.error')
                                         {{ $errors->first('email') }}
                                     @endcomponent
                                 @endif
                                 <input type="Email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                                <div class="help-block with-errors"></div>
+                                <div class="help-block with-errors" style="text-align: left;"></div>
                             </div> 
                         </div>
                         <div class="col-md-12">
@@ -67,14 +67,14 @@
                             </div> 
                         </div>
                         <div class="col-md-12">
-                            <div class="form-group">
+                            <div class="form-group" style="text-align: center;">
                                 @if ($errors->has('password'))
                                     @component('front.components.error')
                                         {{ $errors->first('password') }}
                                     @endcomponent
                                 @endif
                                 <input type="password" placeholder="Re-type Password" id="confirm_password" class="form-control" name="password_confirmation" required data-error="Please enter your confirm password">
-                                <div class="help-block with-errors"></div>
+                                <div class="help-block with-errors" style="text-align: left;"></div>
                             </div> 
                         </div>
 

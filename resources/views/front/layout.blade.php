@@ -162,7 +162,7 @@
                                         <ul class="list-unstyled">
                                             <div class="copyrights">
                                                 <div class="container">
-                                                    <p style="font-size:10px">&copy;Copyrights SIRIVISA Creative. All rights reserved 2019</p>
+                                                    <p style="font-size:10px">&copy;Copyrights <a href="{{route('home')}}">www.sirivisacreative.com</a>. All rights reserved 2019</p>
 
                                                 </div>
                                             </div>

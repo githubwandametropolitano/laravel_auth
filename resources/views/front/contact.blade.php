@@ -13,7 +13,7 @@
                     <hr style="width:120px;border:1px solid black;">
                     <center>
                         <div class="col-lg-7 col-md-12 col-12">
-                            <p style="font-size:16px;">We'd love to hear from you! Please contact us at anytime by emailing us at<Span style="color:#7f0964;font-weight:bold"> hello@sirivisa.com</Span> or fill out our contact form below and we'll respond really soon, promise.</p>
+                            <p style="font-size:16px; color: #505050">We'd love to hear from you! Please contact us at anytime by emailing us at<Span style="color:#7f0964;font-weight:bold"> hello@sirivisa.com</Span> or fill out our contact form below and we'll respond really soon, promise.</p>
                        </div>
                    </center>
                 </div>
@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="submit-button text-center">
                                     <button class="btn" aria-disabled=" " id="submit" type="submit" style="background-color:#7f0964;letter-spacing:1px;">Send Message</button>
-                                    <div id="msgSubmit" class="h3 text-center hidden" style="color:#7f0964;letter-spacing:1px;font-size:25px;padding-top:5px"></div>
+                                    
                                     <div class="clearfix"></div> 
                                 </div>
                             </div>

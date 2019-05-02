@@ -89,7 +89,7 @@
                                     <div class="top-top">
 
                                         <h2>What our customers are saying</h2>
-                                        <p>Working with the creative team was really easy and fun! They were able to give me a really competitive rate and captured my brand and products perfectly. Really happy to be able to depend on them to help create content for me consistently.</p>
+                                        <p style="color: #505050">Working with the creative team was really easy and fun! They were able to give me a really competitive rate and captured my brand and products perfectly. Really happy to be able to depend on them to help create content for me consistently.</p>
                                         <h4>Jessica T.<span>Owner</span></h4>
 
                                     </div>
@@ -99,7 +99,7 @@
                                     <div class="top-top">
 
                                         <h2>What our customers are saying</h2>
-                                        <p>Siri helped build a campaign that was effective in reaching our goals while Andie and the creative team executed on our vision within the short timeframe we provided. A wonderful overall experience!</p>
+                                        <p style="color: #505050">Siri helped build a campaign that was effective in reaching our goals while Andie and the creative team executed on our vision within the short timeframe we provided. A wonderful overall experience!</p>
                                         <h4>Kenneth Y.<span>Director, V3 Electric</span></h4>
 
                                     </div>
@@ -108,7 +108,7 @@
                                     <div class="top-top">
 
                                         <h2>What our customers are saying</h2>
-                                        <p>It's been a pleasure working with Siri and her team. They have been an integral part in helping me get my business off the ground. Their communication is spot on, have an extremely creative eye and are super collaborative. Your brand is in good hands with Siri!</p>
+                                        <p style="color: #505050">It's been a pleasure working with Siri and her team. They have been an integral part in helping me get my business off the ground. Their communication is spot on, have an extremely creative eye and are super collaborative. Your brand is in good hands with Siri!</p>
                                         <h4>Nitasha S.<span>Founder, Unboxd</span></h4>
 
                                     </div>

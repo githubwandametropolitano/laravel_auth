@@ -33,7 +33,7 @@
                         <div class="col-lg-6" id="jj">
                                  
                                  <h4 style="font-size:25px;color:#7f0964;">Our ethos.</h4><br>
-                                  <p style="text-align:center">We use real people to manage your account, no bots or machines. Real people. Why? 
+                                  <p style="text-align:center;color:#505050">We use real people to manage your account, no bots or machines. Real people. Why? 
                                       Because real interactions matter. Because your audience wants a reflection of your brand and not a machine generated, generic comment that is thoughtless. Because bots can't personalize your message and stay true to your brand mission or tone. Not to mention, only authentic interactions really matter to the social media platform's intelligent algorithms that govern how visible your brand is.
                                       Your community facilitator works as an extension of your team to meet your goals. They work alongside myself and the rest of my team to provide creative consulting and digital marketing services that is personalized to your brand's needs so you can focus on your product, your customer and ultimately, your success.</p>
                             
@@ -69,7 +69,7 @@
                                          <h4 style="text-align:center;">Get started the right way on social media</h4>
 
                                         <br>
-                                        <p style="text-align:left;">This plan includes:</p>
+                                        <p style="text-align:left;color:#505050">This plan includes:</p>
 
                                         <ul style="float:left;">
                                           <li style="text-align:left;">Part time community management</li>

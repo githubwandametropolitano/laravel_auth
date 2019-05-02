@@ -32,7 +32,7 @@
                 <div class="col-lg-6" id="jj">
                     <h1 style="font-size:30px;padding:20px;color:#7f0964;">Creating your vision.</h1>
 
-                    <p>Creating great content consistently for social media can be hard for some brands. Our goal is to make getting content for your social media easy and affordable for brands looking to do more on social media but without breaking the bank. Let us help you with:</p>
+                    <p style="color:#505050">Creating great content consistently for social media can be hard for some brands. Our goal is to make getting content for your social media easy and affordable for brands looking to do more on social media but without breaking the bank. Let us help you with:</p>
                     <ul style="float:left;">
                     <li style="text-align:left;">Product shots</li>
                     <li style="text-align:left;">Animations</li>
@@ -67,7 +67,7 @@
                             <h2 style="text-align:center;color:#7f0964;">Creative help when you need it</h2>
 
                             <br>
-                            <p style="text-align:center;">Pay as you go and use what you need with our content package! No more scrambling to find help last minute, we have got you covered with our time bank. This allows you to have the security of an editor, designer, photographer and our creative team ready to jump in and help when you need it.</p><br>
+                            <p style="text-align:center;color:#505050">Pay as you go and use what you need with our content package! No more scrambling to find help last minute, we have got you covered with our time bank. This allows you to have the security of an editor, designer, photographer and our creative team ready to jump in and help when you need it.</p><br>
                             <h4 style="font-size:15px;text-align:center;">10hours     <span style="font-size:30px;margin:0px auto;color:#7f0964;padding-left:30px;">$322</span></h4>
                             <h4 style="font-size:15px;text-align:center;">20hours     <span style="font-size:30px;margin:0px auto;color:#7f0964;padding-left:30px;">$595</span></h4>
                         </div>

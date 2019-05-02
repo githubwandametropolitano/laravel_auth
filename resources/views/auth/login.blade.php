@@ -32,11 +32,13 @@
                         
                         <div class="col-md-12">
                             <div class="form-group">
+                                <div style="text-align: center;">
                                 @if ($errors->has('log'))
                                     @component('front.components.error')
                                         {{ $errors->first('log') }}
                                     @endcomponent
                                 @endif
+                                </div>
                                 <input type="Email" placeholder="Your Email" id="email" class="form-control" name="log" value="{{ old('log') }}" required data-error="Please enter your email">
                                 <div class="help-block with-errors"></div>
                             </div> 
