@@ -34,7 +34,7 @@
                                             <p>We've sent a verify mail to your email address. Please check it.</p>
                                         
                               
-                        </div>           
+                        </div>   
                     </form>
                 </div>
         </div>
