@@ -70,6 +70,6 @@ class RegisterController extends Controller
             'phone' => $data['phone'],
             'password' => bcrypt($data['password']),
         ]);
-        return redirect()-> to('/verify')->with('message', 'We sent a comfirmation email to your email, please click on link inside before login');;
+
     }
 }

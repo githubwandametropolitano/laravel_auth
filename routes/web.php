@@ -26,6 +26,11 @@ Route::name('about')->get('/about', function () {
     return view('front/about');
 });
 
+Route::name('verify')->get('/verify', function () {
+    //return view('welcome');
+    return view('auth/verify');
+});
+
 // Contact
 Route::name('contact')->get('/contact', function () {
     //return view('welcome');
